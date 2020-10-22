@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundColor">@color/colorBackground</item>
+        <item name="android:windowAnimationStyle">@style/ActivityTransitions</item>
+    </style>
+    <style name="AppTheme.Dark" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorPrimary">@color/darkModePrimary</item>
+        <item name="colorPrimaryDark">@color/darkModePrimaryDark</item>
+        <item name="colorAccent">@color/darkModeAccent</item>
+        <item name="backgroundColor">@color/darkcolorBackground</item>
+        <item name="android:windowAnimationStyle">@style/ActivityTransitions</item>
+    </style>
+
+    <style name="AppTheme.noBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundColor">@color/colorBackground</item>
+        <item name="android:windowAnimationStyle">@style/ActivityTransitions</item>
+
+    </style>
+    <style name="AppTheme.noBar.Dark">
+        <item name="colorPrimary">@color/darkModePrimary</item>
+        <item name="colorPrimaryDark">@color/darkModePrimaryDark</item>
+        <item name="colorAccent">@color/darkModeAccent</item>
+        <item name="backgroundColor">@color/darkcolorBackground</item>
+        <item name="android:windowAnimationStyle">@style/ActivityTransitions
+        </item>
+    </style>
+
+    <style name="ActivityTransitions" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/out_right</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
